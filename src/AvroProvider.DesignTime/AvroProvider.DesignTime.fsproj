@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <DefineConstants>IS_DESIGNTIME</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="..\AvroProvider.Runtime\AvroProvider.Runtime.fs" />
+    <Compile Include="AvroProvider.DesignTime.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.TypeProviders.SDK" Version="7.0.3" />
+    <PackageReference Update="FSharp.Core" Version="6.0.5" />
+  </ItemGroup>
+</Project>
