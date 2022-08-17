@@ -10,10 +10,10 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="AvroProvider.Runtime.fs" />
+    <Compile Include="TypeProviderAssembly.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="6.0.5" />
-    <PackageReference Include="FSharp.TypeProviders.SDK" Version="7.0.3" />
     <ProjectReference Include="..\AvroProvider.DesignTime\AvroProvider.DesignTime.fsproj">
       <IsFSharpDesignTimeProvider>true</IsFSharpDesignTimeProvider>
       <PrivateAssets>all</PrivateAssets>
