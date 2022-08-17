@@ -3,6 +3,7 @@
     <OutputType>Library</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <DefineConstants>IS_DESIGNTIME</DefineConstants>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
@@ -10,7 +11,12 @@
     <Compile Include="AvroProvider.DesignTime.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="FSharp.TypeProviders.SDK" Version="7.0.3" />
-    <PackageReference Update="FSharp.Core" Version="6.0.5" />
+    <PackageReference Include="FSharp.TypeProviders.SDK" Version="7.0.3">
+          <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Update="FSharp.Core" Version="5.0.1">
+          <ExcludeAssets>runtime;contentFiles</ExcludeAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
