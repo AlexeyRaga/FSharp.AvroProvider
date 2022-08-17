@@ -15,8 +15,8 @@
           <PrivateAssets>all</PrivateAssets>
     </PackageReference>
 
-    <PackageReference Update="FSharp.Core" Version="6.0.5">
-          <ExcludeAssets>all</ExcludeAssets>
+    <PackageReference Update="FSharp.Core" Version="5.0.1">
+          <ExcludeAssets>runtime;contentFiles</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
 </Project>
